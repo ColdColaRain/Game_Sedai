@@ -165,7 +165,7 @@ const data: Record<string, GameItem[]> = {
   ],
   "2019": [
     { titleZh: "Apex 英雄", titleEn: "Apex Legends", score: 0 },
-    { titleZh: "使命召唤：现代战争", titleEn: "Call of Duty: Modern Warfare", score: 0 },
+    { titleZh: "使命召唤：现代战争重制版", titleEn: "Call of Duty: Modern Warfare", score: 0 },
     { titleZh: "明日方舟", titleEn: "Arknights", score: 0 },
     { titleZh: "宝可梦 剑/盾", titleEn: "Pokémon Sword and Shield", score: 0 },
     { titleZh: "只狼：影逝二度", titleEn: "Sekiro: Shadows Die Twice", score: 0 },
@@ -202,7 +202,7 @@ const data: Record<string, GameItem[]> = {
   ],
   "2022": [
     { titleZh: "艾尔登法环", titleEn: "Elden Ring", score: 0 },
-    { titleZh: "使命召唤：现代战争II", titleEn: "Call of Duty: Modern Warfare II", score: 0 },
+    { titleZh: "使命召唤：现代战争2重制版", titleEn: "Call of Duty: Modern Warfare II", score: 0 },
     { titleZh: "宝可梦 朱/紫", titleEn: "Pokémon Scarlet and Violet", score: 0 },
     { titleZh: "羊了个羊", titleEn: "Sheep a Sheep", score: 0 },
     { titleZh: "宝可梦传说：阿尔宙斯", titleEn: "Pokémon Legends: Arceus", score: 0 },
