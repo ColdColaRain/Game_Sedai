@@ -100,6 +100,15 @@ export const App = () => {
     document.title = t("title")
   }, [language, t])
 
+  // 简单访问统计（不蒜子）：等组件挂载后再注入脚本，确保计数容器已渲染；
+  // 服务不可用时计数保持隐藏，不影响站点本身
+  useEffect(() => {
+    const s = document.createElement("script")
+    s.async = true
+    s.src = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+    document.body.appendChild(s)
+  }, [])
+
   const imageToBlob = async () => {
     if (!wrapper.current) return
 
@@ -572,6 +581,22 @@ export const App = () => {
           >
             {t("viewCode")}
           </a>
+        </div>
+
+        {/* 不蒜子访问统计：脚本拉取到数据后会自动显示；失败则保持隐藏 */}
+        <div className="text-center text-sm text-gray-600">
+          <span
+            id="busuanzi_container_site_pv"
+            style={{ display: "none" }}
+          >
+            {t("pvLabel")} <span id="busuanzi_value_site_pv" /> {t("pvUnit")}
+          </span>
+          <span
+            id="busuanzi_container_site_uv"
+            style={{ display: "none" }}
+          >
+            {t("uvLabel")} <span id="busuanzi_value_site_uv" /> {t("uvUnit")}
+          </span>
         </div>
 
         <div className="text-center">Modified by ColdColaRain</div>
