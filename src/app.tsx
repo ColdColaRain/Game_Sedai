@@ -104,24 +104,87 @@ export const App = () => {
     if (!wrapper.current) return
 
     const el = wrapper.current
-    // 显示布局已全端统一（与电脑一致）；导出仅做不可见的画布安全缩放：
-    // 手机浏览器 canvas 有最大边长限制（约 4096px），超限会导出失败/空白，
-    // 桌面端保持 2x 高清导出
     const isMobile = window.innerWidth < 768
-    const maxDim = Math.max(el.offsetWidth, el.offsetHeight)
-    const scale = isMobile ? Math.min(2, 3500 / maxDim) : 2
+
+    // modern-screenshot 在移动浏览器中需要先把整个 DOM 栅格化到 Canvas。
+    // 对长榜单而言，单纯限制 Canvas 的最长边仍可能产生很大的中间内存。
+    // 因此手机端同时限制最长边和总像素数；桌面端保持原来的 2x 高清导出。
+    const width = Math.max(1, el.scrollWidth, el.offsetWidth)
+    const height = Math.max(1, el.scrollHeight, el.offsetHeight)
+    const maxDim = Math.max(width, height)
+
+    let scale = 2
+
+    if (isMobile) {
+      // 约 4MP 的目标上限通常足够手机查看，同时显著降低 Canvas 内存压力。
+      const maxMobilePixels = 4_000_000
+      const maxMobileDimension = 3000
+
+      const dimensionScale = maxMobileDimension / maxDim
+      const pixelScale = Math.sqrt(maxMobilePixels / (width * height))
+
+      scale = Math.min(1, dimensionScale, pixelScale)
+
+      // 极端长图时避免出现过小的 scale，同时确保最终尺寸至少为 1px。
+      scale = Math.max(scale, 0.05)
+    }
+
+    // 截图前主动等待所有海报完成加载和解码。
+    // 页面展示使用 lazy loading 时，移动浏览器可能尚未加载屏幕外的图片，
+    // 而截图工具会直接处理整个 DOM，从而导致等待过久或得到空白图。
+    const images = Array.from(el.querySelectorAll("img"))
+
+    await Promise.all(
+      images.map(async (img) => {
+        try {
+          if (!img.complete) {
+            await new Promise<void>((resolve) => {
+              const finish = () => resolve()
+              img.addEventListener("load", finish, { once: true })
+              img.addEventListener("error", finish, { once: true })
+            })
+          }
+
+          // decode() 可以避免图片已经 load 但尚未完成位图解码的情况。
+          if (img.complete && img.naturalWidth > 0 && img.decode) {
+            await img.decode().catch(() => {})
+          }
+        } catch {
+          // 单张海报加载失败不应该阻止整张榜单导出。
+        }
+      })
+    )
+
+    // 等待一次布局/绘制，让刚刚完成的图片解码结果真正进入渲染树。
+    await new Promise<void>((resolve) => {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => resolve())
+      })
+    })
+
+    // 字体加载也会影响截图尺寸；若浏览器支持 Font Loading API，则等待字体稳定。
+    if (document.fonts?.ready) {
+      await document.fonts.ready.catch(() => {})
+    }
 
     const blob = await domToBlob(el, {
       scale,
-      // 手机网络较慢时放宽资源抓取超时
-      timeout: 60000,
-      filter(el) {
-        if (el instanceof HTMLElement && el.classList.contains("remove")) {
+      // 资源已经提前加载，因此不需要原来的超长等待时间。
+      timeout: 30000,
+      filter(element) {
+        if (
+          element instanceof HTMLElement &&
+          element.classList.contains("remove")
+        ) {
           return false
         }
         return true
       },
     })
+
+    if (!blob || blob.size === 0) {
+      throw new Error("截图生成失败：浏览器返回了空图片")
+    }
 
     return blob
   }
@@ -286,7 +349,10 @@ export const App = () => {
                                 src={import.meta.env.BASE_URL + encodeURIComponent(poster)}
                                 alt=""
                                 draggable={false}
-                                loading="lazy"
+                                // 截图功能需要读取整张榜单中的所有海报。
+                                // 不使用 lazy loading，避免移动端截图时屏幕外图片尚未加载。
+                                loading="eager"
+                                decoding="async"
                                 className="h-8 md:h-12 max-w-full object-contain mx-auto mt-1 pointer-events-none shrink-0"
                               />
                             )}
