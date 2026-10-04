@@ -129,14 +129,20 @@ export const App = () => {
       scale = Math.max(scale, 0.05)
     }
 
-    // 截图前主动等待所有海报完成加载和解码。
-    // 页面展示使用 lazy loading 时，移动浏览器可能尚未加载屏幕外的图片，
-    // 而截图工具会直接处理整个 DOM，从而导致等待过久或得到空白图。
-    const images = Array.from(el.querySelectorAll("img"))
+    // 只预加载实际渲染中的图片（移动端海报图是隐藏的，跳过以免永久等待懒加载）
+    const images = Array.from(el.querySelectorAll("img")).filter(
+      (img) => img.offsetWidth > 0 && img.offsetHeight > 0
+    )
 
     await Promise.all(
       images.map(async (img) => {
         try {
+          // 强制 eager 并重新触发加载，确保桌面端懒加载的屏幕外海报在导出前就绪
+          if (img.loading !== "eager") {
+            img.loading = "eager"
+            img.src = img.src
+          }
+
           if (!img.complete) {
             await new Promise<void>((resolve) => {
               const finish = () => resolve()
@@ -349,11 +355,12 @@ export const App = () => {
                                 src={import.meta.env.BASE_URL + encodeURIComponent(poster)}
                                 alt=""
                                 draggable={false}
-                                // 截图功能需要读取整张榜单中的所有海报。
-                                // 不使用 lazy loading，避免移动端截图时屏幕外图片尚未加载。
-                                loading="eager"
+                                // 移动端隐藏海报图（与原始项目一致的纯文字版），保证手机端截图稳定快速；
+                                // 保持 lazy 加载，避免隐藏的图片仍被下载浪费手机流量。
+                                // 桌面端导出前会在 imageToBlob 中强制 eager 并等待加载完成。
+                                loading="lazy"
                                 decoding="async"
-                                className="h-8 md:h-12 max-w-full object-contain mx-auto mt-1 pointer-events-none shrink-0"
+                                className="hidden md:block h-8 md:h-12 max-w-full object-contain mx-auto mt-1 pointer-events-none shrink-0"
                               />
                             )}
                           </button>
