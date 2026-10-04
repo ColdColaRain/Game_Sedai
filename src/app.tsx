@@ -558,6 +558,11 @@ export const App = () => {
           </button>
         </div>
 
+        {/* 移动端提示：下载耗时较长（桌面端不显示） */}
+        <div className="md:hidden text-center text-xs text-gray-500">
+          {t("downloadHint")}
+        </div>
+
         <div className="mt-2 text-center">
           {t("footer")}
           <a
