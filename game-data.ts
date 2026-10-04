@@ -220,10 +220,11 @@ const data: Record<string, GameItem[]> = {
     { titleZh: "蛋仔派对", titleEn: "Eggy Party", score: 0 },
     { titleZh: "生化危机4", titleEn: "Resident Evil 4", score: 0 },
     { titleZh: "星空", titleEn: "Starfield", score: 0 },
-    { titleZh: "超级马力欧兄弟：惊奇", titleEn: "Super Mario Bros. Wonder", score: 0 },
     { titleZh: "反恐精英2", titleEn: "Counter-Strike 2", score: 0 },
     { titleZh: "逆水寒手游", titleEn: "Justice Mobile", score: 0 },
     { titleZh: "暗黑破坏神IV", titleEn: "Diablo IV", score: 0 },
+    { titleZh: "边狱巴士", titleEn: "Limbus Company", score: 0 },
+    { titleZh: "潜水员戴夫", titleEn: "Dave the Diver", score: 0 },
   ],
   "2024": [
     { titleZh: "黑神话：悟空", titleEn: "Black Myth: Wukong", score: 0 },
