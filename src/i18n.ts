@@ -12,7 +12,7 @@ export const translations = {
     clear: "清除",
     copyImage: "复制图片",
     downloadImage: "下载图片",
-    downloadHint: "移动端下载时间较长（30s左右...），正在尝试修复...",
+    downloadHint: "移动端下载时间较长（30s左右...），请耐心等待>︿<",
     copySuccess: "复制成功",
     downloadSuccess: "下载成功",
     copyFailed: "复制失败: {{error}}",
