@@ -255,6 +255,13 @@ export const App = () => {
       throw new Error("截图失败：浏览器无法创建 Canvas")
     }
 
+    // 移动端最终 PNG 必须使用纯白不透明背景。
+    // Canvas 默认是透明的，直接导出 PNG 时聊天软件可能会将透明区域显示为黑色/灰色或占位背景。
+    ctx.save()
+    ctx.fillStyle = "#ffffff"
+    ctx.fillRect(0, 0, finalWidth, finalHeight)
+    ctx.restore()
+
     ctx.imageSmoothingEnabled = true
     ctx.imageSmoothingQuality = "high"
 
