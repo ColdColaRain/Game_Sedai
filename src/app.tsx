@@ -104,14 +104,17 @@ export const App = () => {
     if (!wrapper.current) return
 
     const el = wrapper.current
-    // 手机端海报（网格换行版）非常长，2x 画布会超出手机浏览器 canvas 上限，
-    // 自动降到安全尺寸；桌面端保持 2x 高清导出
+    // 显示布局已全端统一（与电脑一致）；导出仅做不可见的画布安全缩放：
+    // 手机浏览器 canvas 有最大边长限制（约 4096px），超限会导出失败/空白，
+    // 桌面端保持 2x 高清导出
     const isMobile = window.innerWidth < 768
     const maxDim = Math.max(el.offsetWidth, el.offsetHeight)
-    const scale = isMobile ? Math.min(1, 3500 / maxDim) : 2
+    const scale = isMobile ? Math.min(2, 3500 / maxDim) : 2
 
     const blob = await domToBlob(el, {
       scale,
+      // 手机网络较慢时放宽资源抓取超时
+      timeout: 60000,
       filter(el) {
         if (el instanceof HTMLElement && el.classList.contains("remove")) {
           return false
@@ -182,7 +185,7 @@ export const App = () => {
           </div>
           <div className="w-full overflow-x-auto">
             <div
-              className="flex flex-col border border-b-0 bg-white w-full md:w-fit mx-auto"
+              className="flex flex-col border border-b-0 bg-white w-fit mx-auto"
               ref={wrapper}
             >
               <div className="border-b justify-between p-2 text-lg  font-bold flex">
@@ -211,14 +214,10 @@ export const App = () => {
               {visibleYears.map((year) => {
                 const items = gameData[year] || []
                 return (
-                  <div key={year} className="flex flex-col md:flex-row border-b">
-                    {/* 手机端：年份改为顶部红色横条 */}
-                    <div className="bg-red-500 text-white flex items-center justify-center font-bold border-black h-8 md:hidden">
-                      <span className="text-sm">{year}</span>
-                    </div>
+                  <div key={year} className="flex border-b">
                     <div
                       className={`
-                      bg-red-500 shrink-0 text-white hidden md:flex items-center font-bold justify-center p-1 border-black
+                      bg-red-500 shrink-0 text-white flex items-center font-bold justify-center p-1 border-black
                       h-24 md:h-28 w-16 md:w-20
                     `}
                     >
@@ -232,8 +231,7 @@ export const App = () => {
                         {year}
                       </span>
                     </div>
-                    {/* 手机端：网格自动换行；桌面端：保持横向一行 */}
-                    <div className="grid grid-cols-4 sm:grid-cols-6 md:flex md:shrink-0 w-full md:w-auto">
+                    <div className="flex shrink-0">
                       {items.slice(0, 12).map((item) => {
                         const gameKey = getGameTitle(item, "zh")
                         const displayTitle = getGameTitle(item, language)
@@ -246,8 +244,8 @@ export const App = () => {
                               h-24 md:h-28 
                               ${
                                 language === "en"
-                                  ? "w-full md:w-24"
-                                  : "w-full md:w-20"
+                                  ? "w-20 md:w-24"
+                                  : "w-16 md:w-20"
                               }
                               border-l break-words text-center shrink-0 inline-flex flex-col items-center justify-center 
                               p-1 overflow-hidden cursor-pointer 
@@ -304,15 +302,15 @@ export const App = () => {
                             h-24 md:h-28 
                             ${
                               language === "en"
-                                ? "w-full md:w-24"
-                                : "w-full md:w-20"
+                                ? "w-20 md:w-24"
+                                : "w-16 md:w-20"
                             }
                             border-l bg-gray-50
                           `}
                           />
                         )
                       )}
-                      <div className="hidden md:block w-0 h-24 md:h-28 border-r" />
+                      <div className="w-0 h-24 md:h-28 border-r" />
                     </div>
                   </div>
                 )

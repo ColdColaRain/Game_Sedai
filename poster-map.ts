@@ -81,7 +81,7 @@ export const posterByTitle: Record<string, string> = {
   "糖果传奇": "糖果传奇.png",
   "战地4": "战地4.png",
   "Flappy Bird": "Flappy Bird.png",
-  "命运": "命运.png",
+  "命运1 命运2": "命运.png",
   "炉石传说": "炉石传说.png",
   "看门狗": "看门狗.png",
   "玩具熊的五夜后宫": "玩具熊的五夜后宫.png",
