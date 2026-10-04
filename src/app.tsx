@@ -384,7 +384,7 @@ export const App = () => {
         <div className="mt-2 text-center">
           {t("footer")}
           <a
-            href="https://github.com/egoist/anime-sedai"
+            href="https://github.com/ColdColaRain/Game_Sedai/"
             target="_blank"
             className="underline"
           >
