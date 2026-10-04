@@ -172,7 +172,7 @@ export const App = () => {
           </div>
           <div className="w-full overflow-x-auto">
             <div
-              className="flex flex-col border border-b-0 bg-white w-fit mx-auto"
+              className="flex flex-col border border-b-0 bg-white w-full md:w-fit mx-auto"
               ref={wrapper}
             >
               <div className="border-b justify-between p-2 text-lg  font-bold flex">
@@ -201,12 +201,15 @@ export const App = () => {
               {visibleYears.map((year) => {
                 const items = gameData[year] || []
                 return (
-                  <div key={year} className="flex border-b">
+                  <div key={year} className="flex flex-col md:flex-row border-b">
+                    {/* 手机端：年份改为顶部红色横条 */}
+                    <div className="bg-red-500 text-white flex items-center justify-center font-bold border-black h-8 md:hidden">
+                      <span className="text-sm">{year}</span>
+                    </div>
                     <div
                       className={`
-                      bg-red-500 shrink-0 text-white flex items-center font-bold justify-center p-1 border-black
-                      h-24 md:h-28 
-                      ${language === "en" ? "w-16 md:w-20" : "w-16 md:w-20"}
+                      bg-red-500 shrink-0 text-white hidden md:flex items-center font-bold justify-center p-1 border-black
+                      h-24 md:h-28 w-16 md:w-20
                     `}
                     >
                       <span
@@ -219,7 +222,8 @@ export const App = () => {
                         {year}
                       </span>
                     </div>
-                    <div className="flex shrink-0">
+                    {/* 手机端：网格自动换行；桌面端：保持横向一行 */}
+                    <div className="grid grid-cols-4 sm:grid-cols-6 md:flex md:shrink-0 w-full md:w-auto">
                       {items.slice(0, 12).map((item) => {
                         const gameKey = getGameTitle(item, "zh")
                         const displayTitle = getGameTitle(item, language)
@@ -232,8 +236,8 @@ export const App = () => {
                               h-24 md:h-28 
                               ${
                                 language === "en"
-                                  ? "w-20 md:w-24"
-                                  : "w-16 md:w-20"
+                                  ? "w-full md:w-24"
+                                  : "w-full md:w-20"
                               }
                               border-l break-words text-center shrink-0 inline-flex flex-col items-center justify-center 
                               p-1 overflow-hidden cursor-pointer 
@@ -290,15 +294,15 @@ export const App = () => {
                             h-24 md:h-28 
                             ${
                               language === "en"
-                                ? "w-20 md:w-24"
-                                : "w-16 md:w-20"
+                                ? "w-full md:w-24"
+                                : "w-full md:w-20"
                             }
                             border-l bg-gray-50
                           `}
                           />
                         )
                       )}
-                      <div className="w-0 h-24 md:h-28 border-r" />
+                      <div className="hidden md:block w-0 h-24 md:h-28 border-r" />
                     </div>
                   </div>
                 )
