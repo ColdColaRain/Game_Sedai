@@ -1,0 +1,219 @@
+| 年份   | 排名 | 中文名        | 英文名                                  |
+| ---- | -: | ---------- | ------------------------------------ |
+| 2006 |  1 | 魔兽世界       | **World of Warcraft**                |
+| 2006 |  2 | 梦幻西游       | **Fantasy Westward Journey**         |
+| 2006 |  3 | 征途         | **ZT Online**                        |
+| 2006 |  4 | 热血传奇       | **The Legend of Mir 2**              |
+| 2006 |  5 | 劲舞团        | **Audition**                         |
+| 2006 |  6 | 完美世界       | **Perfect World**                    |
+| 2006 |  7 | 跑跑卡丁车      | **KartRider**                        |
+| 2006 |  8 | 新超级马力欧兄弟   | **New Super Mario Bros.**            |
+| 2006 |  9 | 上古卷轴 IV：湮没 | **The Elder Scrolls IV: Oblivion**   |
+| 2006 | 10 | 冒险岛        | **MapleStory**                       |
+| 2007 |  1 | 光环3        | **Halo 3**                           |
+| 2007 |  2 | 使命召唤4：现代战争 | **Call of Duty 4: Modern Warfare**   |
+| 2007 |  3 | 超级马力欧银河    | **Super Mario Galaxy**               |
+| 2007 |  4 | 天龙八部       | **Dragon Oath**                      |
+| 2007 |  5 | 诛仙         | **Jade Dynasty**                     |
+| 2007 |  6 | 生化奇兵       | **BioShock**                         |
+| 2007 |  7 | 孤岛危机       | **Crysis**                           |
+| 2007 |  8 | 宝可梦 钻石/珍珠  | **Pokémon Diamond and Pearl**        |
+| 2007 |  9 | 吉他英雄3：摇滚传奇 | **Guitar Hero III: Legends of Rock** |
+| 2007 | 10 | 神秘海域：德雷克的宝藏 | Uncharted: Drake's Fortune |
+
+| 2008 | 1 | 侠盗猎车手IV | Grand Theft Auto IV |
+| 2008 | 2 | 地下城与勇士 | Dungeon Fighter Online |
+| 2008 | 3 | 穿越火线 | CrossFire |
+| 2008 | 4 | 马里奥赛车 Wii | Mario Kart Wii |
+| 2008 | 5 | Wii Fit | Wii Fit |
+| 2008 | 6 | 辐射3 | Fallout 3 |
+| 2008 | 7 | 求生之路 | Left 4 Dead |
+| 2008 | 8 | QQ飞车 | QQ Speed |
+| 2008 | 9 | 孢子 | Spore |
+| 2008 | 10 | 摇滚乐队 | Rock Band |
+| 2009 | 1 | 使命召唤：现代战争2 | Call of Duty: Modern Warfare 2 |
+| 2009 | 2 | 刺客信条II | Assassin's Creed II |
+| 2009 | 3 | Wii运动 度假胜地 | Wii Sports Resort |
+| 2009 | 4 | 新超级马力欧兄弟 Wii | New Super Mario Bros. Wii |
+| 2009 | 5 | 生化危机5 | Resident Evil 5 |
+| 2009 | 6 | 植物大战僵尸 | Plants vs. Zombies |
+| 2009 | 7 | 求生之路2 | Left 4 Dead 2 |
+| 2009 | 8 | 龙之谷 | Dragon Nest |
+| 2009 | 9 | 剑网3 | JX Online 3 |
+| 2009 | 10 | 龙腾世纪：起源 | Dragon Age: Origins |
+| 2010 | 1 | 使命召唤：黑色行动 | Call of Duty: Black Ops |
+| 2010 | 2 | 荒野大镖客：救赎 | Red Dead Redemption |
+| 2010 | 3 | 星际争霸II：自由之翼 | StarCraft II: Wings of Liberty |
+| 2010 | 4 | FIFA 11 | FIFA 11 |
+| 2010 | 5 | 光环：致远星 | Halo: Reach |
+| 2010 | 6 | 愤怒的小鸟 | Angry Birds |
+| 2010 | 7 | QQ农场 | QQ Farm |
+| 2010 | 8 | FarmVille | FarmVille |
+| 2010 | 9 | 神武 | Shenwu |
+| 2010 | 10 | NBA 2K11 | NBA 2K11 |                            |
+
+| 年份   | 排名 | 中文名          | 英文名                                      |
+| ---- | -: | ------------ | ---------------------------------------- |
+| 2011 |  1 | 我的世界         | **Minecraft**                            |
+| 2011 |  2 | 上古卷轴V：天际     | **The Elder Scrolls V: Skyrim**          |
+| 2011 |  3 | 英雄联盟         | **League of Legends**                    |
+| 2011 |  4 | 使命召唤：现代战争3   | **Call of Duty: Modern Warfare 3**       |
+| 2011 |  5 | 战地3          | **Battlefield 3**                        |
+| 2011 |  6 | 坦克世界         | **World of Tanks**                       |
+| 2011 |  7 | 黑暗之魂         | **Dark Souls**                           |
+| 2011 |  8 | 传送门2         | **Portal 2**                             |
+| 2011 |  9 | 泰拉瑞亚         | **Terraria**                             |
+| 2011 | 10 | 神秘海域3：德雷克的诡计 | **Uncharted 3: Drake's Deception**       |
+| 2012 |  1 | 暗黑破坏神III     | **Diablo III**                           |
+| 2012 |  2 | 使命召唤：黑色行动II  | **Call of Duty: Black Ops II**           |
+| 2012 |  3 | 孤岛惊魂3        | **Far Cry 3**                            |
+| 2012 |  4 | 无主之地2        | **Borderlands 2**                        |
+| 2012 |  5 | 刺客信条III      | **Assassin's Creed III**                 |
+| 2012 |  6 | FIFA 13      | **FIFA 13**                              |
+| 2012 |  7 | 激战2          | **Guild Wars 2**                         |
+| 2012 |  8 | 掠食？          | **Dishonored**                           |
+| 2012 |  9 | 行尸走肉         | **The Walking Dead**                     |
+| 2012 | 10 | 部落冲突         | **Clash of Clans**                       |
+| 2013 |  1 | 侠盗猎车手V       | **Grand Theft Auto V**                   |
+| 2013 |  2 | 最后生还者        | **The Last of Us**                       |
+| 2013 |  3 | Dota 2       | **Dota 2**                               |
+| 2013 |  4 | 宝可梦 X / Y    | **Pokémon X and Y**                      |
+| 2013 |  5 | 剑灵           | **Blade & Soul**                         |
+| 2013 |  6 | FIFA 14      | **FIFA 14**                              |
+| 2013 |  7 | 刺客信条IV：黑旗    | **Assassin's Creed IV: Black Flag**      |
+| 2013 |  8 | 神庙逃亡2        | **Temple Run 2**                         |
+| 2013 |  9 | 糖果传奇         | **Candy Crush Saga**                     |
+| 2013 | 10 | 战地4          | **Battlefield 4**                        |
+| 2014 |  1 | Flappy Bird  | **Flappy Bird**                          |
+| 2014 |  2 | 命运           | **Destiny**                              |
+| 2014 |  3 | 炉石传说         | **Hearthstone**                          |
+| 2014 |  4 | 刀塔传奇         | **DOTA Legend**                          |
+| 2014 |  5 | 看门狗          | **Watch Dogs**                           |
+| 2014 |  6 | 玩具熊的五夜后宫     | **Five Nights at Freddy's**              |
+| 2014 |  7 | 模拟人生4        | **The Sims 4**                           |
+| 2014 |  8 | FIFA 15      | **FIFA 15**                              |
+| 2014 |  9 | 使命召唤：高级战争    | **Call of Duty: Advanced Warfare**       |
+| 2014 | 10 | 开心消消乐        | **Anipop**                               |
+| 2015 |  1 | 巫师3：狂猎       | **The Witcher 3: Wild Hunt**             |
+| 2015 |  2 | 辐射4          | **Fallout 4**                            |
+| 2015 |  3 | 使命召唤：黑色行动III | **Call of Duty: Black Ops III**          |
+| 2015 |  4 | 梦幻西游手游       | **Fantasy Westward Journey**             |
+| 2015 |  5 | 火箭联盟         | **Rocket League**                        |
+| 2015 |  6 | 血源诅咒         | **Bloodborne**                           |
+| 2015 |  7 | 合金装备V：幻痛     | **Metal Gear Solid V: The Phantom Pain** |
+| 2015 |  8 | 斯普拉遁         | **Splatoon**                             |
+| 2015 |  9 | Undertale    | **Undertale**                            |
+| 2015 | 10 | 蝙蝠侠：阿卡姆骑士    | **Batman: Arkham Knight**                |
+
+| 年份   | 排名 | 中文名                 | 英文名                                                |
+| ---- | -: | ------------------- | -------------------------------------------------- |
+| 2016 |  1 | Pokémon GO          | **Pokémon GO**                                     |
+| 2016 |  2 | 王者荣耀                | **Honor of Kings**                                 |
+| 2016 |  3 | 守望先锋                | **Overwatch**                                      |
+| 2016 |  4 | 阴阳师                 | **Onmyoji**                                        |
+| 2016 |  5 | 战地1                 | **Battlefield 1**                                  |
+| 2016 |  6 | 最终幻想XV              | **Final Fantasy XV**                               |
+| 2016 |  7 | 神秘海域4：盗贼末路          | **Uncharted 4: A Thief's End**                     |
+| 2016 |  8 | 黑暗之魂III             | **Dark Souls III**                                 |
+| 2016 |  9 | 星露谷物语               | **Stardew Valley**                                 |
+| 2016 | 10 | 毁灭战士                | **DOOM**                                           |
+| 2017 |  1 | 绝地求生                | **PUBG: Battlegrounds**                            |
+| 2017 |  2 | 塞尔达传说：旷野之息          | **The Legend of Zelda: Breath of the Wild**        |
+| 2017 |  3 | 超级马力欧：奥德赛           | **Super Mario Odyssey**                            |
+| 2017 |  4 | 生化危机7：生化危机          | **Resident Evil 7: Biohazard**                     |
+| 2017 |  5 | 尼尔：机械纪元             | **NieR:Automata**                                  |
+| 2017 |  6 | 地平线：零之曙光            | **Horizon Zero Dawn**                              |
+| 2017 |  7 | 使命召唤：二战             | **Call of Duty: WWII**                             |
+| 2017 |  8 | FIFA 18             | **FIFA 18**                                        |
+| 2017 |  9 | 刺客信条：起源             | **Assassin's Creed Origins**                       |
+| 2017 | 10 | 荒野行动                | **Knives Out**                                     |
+| 2018 |  1 | 堡垒之夜                | **Fortnite**                                       |
+| 2018 |  2 | 荒野大镖客：救赎2           | **Red Dead Redemption 2**                          |
+| 2018 |  3 | 第五人格                | **Identity V**                                     |
+| 2018 |  4 | 战神                  | **God of War**                                     |
+| 2018 |  5 | 怪物猎人：世界             | **Monster Hunter: World**                          |
+| 2018 |  6 | 漫威蜘蛛侠               | **Marvel's Spider-Man**                            |
+| 2018 |  7 | 任天堂明星大乱斗 特别版        | **Super Smash Bros. Ultimate**                     |
+| 2018 |  8 | 明日之后                | **LifeAfter**                                      |
+| 2018 |  9 | 宝可梦 Let's Go！皮卡丘/伊布 | **Pokémon: Let's Go, Pikachu! / Let's Go, Eevee!** |
+| 2018 | 10 | 辐射76                | **Fallout 76**                                     |
+| 2019 |  1 | Apex 英雄             | **Apex Legends**                                   |
+| 2019 |  2 | 使命召唤：现代战争           | **Call of Duty: Modern Warfare**                   |
+| 2019 |  3 | 明日方舟                | **Arknights**                                      |
+| 2019 |  4 | 宝可梦 剑/盾             | **Pokémon Sword and Shield**                       |
+| 2019 |  5 | 只狼：影逝二度             | **Sekiro: Shadows Die Twice**                      |
+| 2019 |  6 | 生化危机2               | **Resident Evil 2**                                |
+| 2019 |  7 | 使命召唤手游              | **Call of Duty: Mobile**                           |
+| 2019 |  8 | 云顶之弈                | **Teamfight Tactics**                              |
+| 2019 |  9 | 三国志·战略版             | **Three Kingdoms: Strategy Edition**               |
+| 2019 | 10 | 无主之地3               | **Borderlands 3**                                  |
+| 2020 |  1 | 集合啦！动物森友会           | **Animal Crossing: New Horizons**                  |
+| 2020 |  2 | 原神                  | **Genshin Impact**                                 |
+| 2020 |  3 | 使命召唤：战区             | **Call of Duty: Warzone**                          |
+| 2020 |  4 | Among Us / 太空狼人杀    | **Among Us**                                       |
+| 2020 |  5 | 糖豆人：终极淘汰赛           | **Fall Guys: Ultimate Knockout**                   |
+| 2020 |  6 | 无畏契约                | **VALORANT**                                       |
+| 2020 |  7 | 赛博朋克2077            | **Cyberpunk 2077**                                 |
+| 2020 |  8 | 光·遇                 | **Sky: Children of the Light**                     |
+| 2020 |  9 | 最后生还者 Part II       | **The Last of Us Part II**                         |
+| 2020 | 10 | 对马岛之魂               | **Ghost of Tsushima**                              |
+
+| 年份   | 排名 | 中文名                  | 英文名                                           |
+| ---- | -: | -------------------- | --------------------------------------------- |
+| 2021 |  1 | Roblox               | **Roblox**                                    |
+| 2021 |  2 | 永劫无间                 | **NARAKA: BLADEPOINT**                        |
+| 2021 |  3 | 双人成行                 | **It Takes Two**                              |
+| 2021 |  4 | 生化危机：村庄              | **Resident Evil Village**                     |
+| 2021 |  5 | 极限竞速：地平线5            | **Forza Horizon 5**                           |
+| 2021 |  6 | 战地2042               | **Battlefield 2042**                          |
+| 2021 |  7 | 光环：无限                | **Halo Infinite**                             |
+| 2021 |  8 | 新世界                  | **New World**                                 |
+| 2021 |  9 | Valheim：英灵神殿         | **Valheim**                                   |
+| 2021 | 10 | 哈利波特：魔法觉醒            | **Harry Potter: Magic Awakened**              |
+| 2022 |  1 | 艾尔登法环                | **Elden Ring**                                |
+| 2022 |  2 | 使命召唤：现代战争II          | **Call of Duty: Modern Warfare II**           |
+| 2022 |  3 | 宝可梦 朱/紫              | **Pokémon Scarlet and Violet**                |
+| 2022 |  4 | 羊了个羊                 | **Sheep a Sheep**                             |
+| 2022 |  5 | 宝可梦传说：阿尔宙斯           | **Pokémon Legends: Arceus**                   |
+| 2022 |  6 | 战神：诸神黄昏              | **God of War Ragnarök**                       |
+| 2022 |  7 | 守望先锋2                | **Overwatch 2**                               |
+| 2022 |  8 | 失落的方舟                | **Lost Ark**                                  |
+| 2022 |  9 | Stray / 流浪猫          | **Stray**                                     |
+| 2022 | 10 | 幻塔                   | **Tower of Fantasy**                          |
+| 2022 | 11 | 吸血鬼幸存者               | **Vampire Survivors**                         |
+| 2022 | 12 | Wordle               | **Wordle**                                    |
+| 2023 |  1 | 霍格沃茨之遗               | **Hogwarts Legacy**                           |
+| 2023 |  2 | 博德之门3                | **Baldur's Gate 3**                           |
+| 2023 |  3 | 塞尔达传说：王国之泪           | **The Legend of Zelda: Tears of the Kingdom** |
+| 2023 |  4 | 崩坏：星穹铁道              | **Honkai: Star Rail**                         |
+| 2023 |  5 | 蛋仔派对                 | **Eggy Party**                                |
+| 2023 |  6 | 生化危机4                | **Resident Evil 4**                           |
+| 2023 |  7 | 星空                   | **Starfield**                                 |
+| 2023 |  8 | 超级马力欧兄弟：惊奇           | **Super Mario Bros. Wonder**                  |
+| 2023 |  9 | 反恐精英2                | **Counter-Strike 2**                          |
+| 2023 | 10 | 逆水寒手游                | **Justice Mobile**                            |
+| 2023 | 11 | 暗黑破坏神IV              | **Diablo IV**                                 |
+| 2024 |  1 | 黑神话：悟空               | **Black Myth: Wukong**                        |
+| 2024 |  2 | 鸣潮                   | **Wuthering Waves**                           |
+| 2024 |  3 | 绝区零                  | **Zenless Zone Zero**                         |
+| 2024 |  4 | 幻兽帕鲁                 | **Palworld**                                  |
+| 2024 |  5 | 地狱潜者2 | **Helldivers 2**                              |
+| 2024 |  6 | EA Sports FC 25      | **EA Sports FC 25**                           |
+| 2024 |  7 | 使命召唤：黑色行动6           | **Call of Duty: Black Ops 6**                 |
+| 2024 |  8 | 最终幻想VII：重生           | **Final Fantasy VII Rebirth**                 |
+| 2024 |  9 | 漫威争锋                 | **Marvel Rivals**                             |
+| 2024 | 10 | 寂静岭2                 | **Silent Hill 2**                             |
+| 2024 | 11 | Balatro              | **Balatro**                                   |
+| 2025 |  1 | 怪物猎人：荒野              | **Monster Hunter Wilds**                      |
+| 2025 |  2 | 三角洲行动                | **Delta Force**                               |
+| 2025 |  3 | 燕云十六声                | **Where Winds Meet**                          |
+| 2025 |  4 | 光与影：33号远征队           | **Clair Obscur: Expedition 33**               |
+| 2025 |  5 | 王国风云：救赎2 / 天国：拯救2    | **Kingdom Come: Deliverance II**              |
+| 2025 |  6 | 双影奇境                 | **Split Fiction**                             |
+| 2025 |  7 | 刺客信条：影               | **Assassin's Creed Shadows**                  |
+| 2025 |  8 | 宝可梦传说：Z-A            | **Pokémon Legends: Z-A**                      |
+| 2025 |  9 | R.E.P.O.             | **R.E.P.O.**                                  |
+| 2025 | 10 | PEAK                 | **PEAK**                                      |
+| 2025 | 11 | 偷走一个脑腐               | **Steal a Brainrot**                          |
+| 2025 | 12 | Schedule I           | **Schedule I**                                |
+
