@@ -103,8 +103,15 @@ export const App = () => {
   const imageToBlob = async () => {
     if (!wrapper.current) return
 
-    const blob = await domToBlob(wrapper.current, {
-      scale: 2,
+    const el = wrapper.current
+    // 手机端海报（网格换行版）非常长，2x 画布会超出手机浏览器 canvas 上限，
+    // 自动降到安全尺寸；桌面端保持 2x 高清导出
+    const isMobile = window.innerWidth < 768
+    const maxDim = Math.max(el.offsetWidth, el.offsetHeight)
+    const scale = isMobile ? Math.min(1, 3500 / maxDim) : 2
+
+    const blob = await domToBlob(el, {
+      scale,
       filter(el) {
         if (el instanceof HTMLElement && el.classList.contains("remove")) {
           return false
@@ -140,9 +147,12 @@ export const App = () => {
     const a = document.createElement("a")
     a.href = url
     a.download = "game-sedai.png"
+    // 移动端 Safari 要求 <a> 已挂载到文档中才能触发下载
+    document.body.appendChild(a)
     a.click()
-
-    URL.revokeObjectURL(url)
+    a.remove()
+    // 延迟回收 blob，避免移动端在下载真正开始前就释放导致失败
+    setTimeout(() => URL.revokeObjectURL(url), 10000)
   }
 
   const totalGames = visibleGameKeys.length
