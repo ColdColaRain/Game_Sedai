@@ -106,7 +106,7 @@ const data: Record<string, GameItem[]> = {
   ],
   "2014": [
     { titleZh: "Flappy Bird", titleEn: "Flappy Bird", score: 0 },
-    { titleZh: "命运", titleEn: "Destiny", score: 0 },
+    { titleZh: "命运1/命运2", titleEn: "Destiny", score: 0 },
     { titleZh: "炉石传说", titleEn: "Hearthstone", score: 0 },
     { titleZh: "看门狗", titleEn: "Watch Dogs", score: 0 },
     { titleZh: "玩具熊的五夜后宫", titleEn: "Five Nights at Freddy's", score: 0 },
